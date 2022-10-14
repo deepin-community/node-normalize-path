@@ -1,0 +1,4 @@
+# False positive
+source-is-missing benchmark/fixtures/long.js line 3 is 522 characters long (>512)
+source-contains-prebuilt-javascript-object benchmark/fixtures/long.js line 3 is 522 characters long (>512)
+very-long-line-length-in-source-file benchmark/fixtures/long.js line 6 is 522 characters long (>512)
