@@ -1,26 +1,25 @@
 Source: node-normalize-path
+Section: javascript
+Priority: optional
 Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
 Uploaders: Sruthi Chandran <srud@disroot.org>
-Section: javascript
-Testsuite: autopkgtest-pkg-nodejs
-Priority: optional
-Build-Depends:
- debhelper-compat (= 13)
- , nodejs
+Build-Depends: debhelper-compat (= 13)
+ , dh-sequence-nodejs
  , mocha
  , node-minimist
- , dh-sequence-nodejs
-Standards-Version: 4.6.0
+ , nodejs
+Standards-Version: 4.6.1
 Vcs-Browser: https://salsa.debian.org/js-team/node-normalize-path
 Vcs-Git: https://salsa.debian.org/js-team/node-normalize-path.git
 Homepage: https://github.com/jonschlinkert/normalize-path
+Testsuite: autopkgtest-pkg-nodejs
 Rules-Requires-Root: no
 
 Package: node-normalize-path
 Architecture: all
-Depends:
- ${misc:Depends}
- , nodejs
+Depends: nodejs:any
+ , ${misc:Depends}
+Provides: ${nodejs:Provides}
 Multi-Arch: foreign
 Description: Normalize file path slashes to be unix-like forward slashes
  Normalize file path slashes to be unix-like forward slashes. Also condenses

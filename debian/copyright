@@ -2,6 +2,7 @@ Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: normalize-path
 Upstream-Contact: https://github.com/jonschlinkert/normalize-path/issues
 Source: https://github.com/jonschlinkert/normalize-path
+ https://registry.npmjs.org/@types/normalize-path
 
 Files: *
 Copyright: 2014-2018, Jon Schlinkert (https://github.com/jonschlinkert)
@@ -10,6 +11,10 @@ License: Expat
 Files: debian/*
 Copyright: 2016, Sruthi Chandran <srud@disroot.org>
  2019, Yadd <yadd@debian.org>
+License: Expat
+
+Files: types-*/*
+Copyright: Microsoft Corporation
 License: Expat
 
 License: Expat
